@@ -26,7 +26,7 @@ SECRET_KEY = 't_-5!0x7_#ettuz!%sddc1*b%1*))@5)k4sli4p44!0v@ikjvg'
 DEBUG = True
 
 # ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['108.137.93.177', '127.0.0.1', 'localhost']
 # ALLOWED_HOSTS = ['18.138.16.232']
 
 
@@ -93,15 +93,27 @@ DATABASES = {
 
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
+        'NAME': 'database-postgre',
         'USER': 'postgres',
-        'PASSWORD': 'LpHTIGtjS2CjtEXIdilU',
-        'HOST': 'containers-us-west-80.railway.app',
-        'PORT': '7891',
-        'OPTIONS': {
-            'options': '-c timezone=Asia/Jakarta',
-        },
+        'PASSWORD': 'admin123',
+        'HOST': 'database-postgre.cbppiajahofa.ap-southeast-3.rds.amazonaws.com',
+        'PORT': '5432',
+        # 'OPTIONS': {
+        #     'options': '-c timezone=Asia/Jakarta',
+        # },
     }
+
+    #     'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'railway',
+    #     'USER': 'postgres',
+    #     'PASSWORD': 'LpHTIGtjS2CjtEXIdilU',
+    #     'HOST': 'containers-us-west-80.railway.app',
+    #     'PORT': '7891',
+    #     'OPTIONS': {
+    #         'options': '-c timezone=Asia/Jakarta',
+    #     },
+    # }
 
     #     'default': {
     #     'ENGINE': 'django.db.backends.mysql',
