@@ -25,8 +25,8 @@ SECRET_KEY = 't_-5!0x7_#ettuz!%sddc1*b%1*))@5)k4sli4p44!0v@ikjvg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['108.137.93.177', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['108.137.93.177', '127.0.0.1', 'localhost']
 # ALLOWED_HOSTS = ['18.138.16.232']
 
 
@@ -93,10 +93,10 @@ DATABASES = {
 
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'database-postgre',
-        'USER': 'postgres',
+        'NAME': 'name_postgre',
+        'USER': 'user_postgre',
         'PASSWORD': 'admin123',
-        'HOST': 'database-postgre.cbppiajahofa.ap-southeast-3.rds.amazonaws.com',
+        'HOST': 'postgre.cbppiajahofa.ap-southeast-3.rds.amazonaws.com',
         'PORT': '5432',
         # 'OPTIONS': {
         #     'options': '-c timezone=Asia/Jakarta',
